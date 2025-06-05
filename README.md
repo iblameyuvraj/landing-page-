@@ -2,11 +2,11 @@
 
 A stunning, modern landing page built with cutting-edge web technologies and beautiful UI/UX design principles.
 
-![Outcome Creative](https://theishy.netlify.app/og.png)
+![Outcome Creative](https://therishy.netlify.app/og.png)
 
 ## 🌟 Live Demo
 
-Visit the live site: [Outcome Creative](https://theishy.netlify.app)
+Visit the live site: [therishy](https://therishy.netlify.app)
 
 ## 🚀 Tech Stack
 
