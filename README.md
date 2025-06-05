@@ -39,8 +39,8 @@ Visit the live site: [Outcome Creative](https://theishy.netlify.app)
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/outcome-creative.git
-cd outcome-creative
+git clone https://github.com/https://github.com/iblameyuvraj/landing-page-
+cd landing-page-
 ```
 
 2. Install dependencies:
@@ -88,18 +88,14 @@ This project is deployed on Netlify. The deployment process is automated through
 - Optimized performance
 - Accessible design patterns
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👥 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For any queries or support, please reach out to [your-email@example.com]
+For any queries or support, please reach out to [yuvrajjsoni17@gmail.com]
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Yuvraj] (yuvraj.site)
