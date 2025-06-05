@@ -285,9 +285,8 @@ function Title({
             className="absolute bottom-[16px] left-[16px] md:left-[32px] flex flex-col text-[16px] md:text-[1.5vw] md:leading-[1.5vw] font-[300] 2xl:text-[30px] 2xl:leading-[30px]"
           >
             <p className="max-w-[50%] md:max-w-[30%] text-left pb-5">
-              We are Outcome Creative. A strategic branding, design, and
-              business development shop that toes the line between solving for
-              creativity and growth.
+              Join 500+ Modern Creators building their dream businesses and
+              making big money by upgrading their frequency.
             </p>
             <button
               onClick={() => {

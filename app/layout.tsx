@@ -4,19 +4,19 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://outcomecreative.com"),
-  title: "Creative Agency in NYC | Outcome Creative",
+  metadataBase: new URL("https://bigmoneyclub.com"),
+  title: "Spiritual Strategies For Modern Creators | Big Money Club",
   description:
-    "We are Outcome Creative. A strategic branding, design, and business development shop that toes the line between solving for creativity and growth. Contact Us.",
+    "We are Big Money Club. A spiritual strategies for modern creators. Contact Us.",
   openGraph: {
-    title: "Outcome Creative",
+    title: "Big Money Club",
     description:
-      "A strategic branding, design, and business development shop that toes the line between solving for creativity and growth.",
+      "A spiritual strategies for modern creators.",
     url: "/",
-    siteName: "Outcome Creative",
+    siteName: "Big Money Club",
     images: [
       {
-        url: "/outcome-creative-logo.jpg",
+        url: "/big-money-club.png",
         width: 4000,
         height: 917,
       },

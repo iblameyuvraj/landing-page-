@@ -30,8 +30,8 @@ export default function NavBar({
       <nav className="px-4 md:px-8 h-[64px] md:h-24 flex items-center justify-between max-w-screen-2xl mx-auto">
         <img
           className="z-10 cursor-pointer dark:invert h-[27px] w-[113px] md:w-[173px] md:h-[41px]"
-          src="/outcome-creative-logo.svg"
-          alt="Outcome Creative Logo"
+          src="/big-money-club.svg"
+          alt="Big Money Club Logo"
           onClick={() => scrollbar?.scrollTo(0, 0)}
         />
         <div className="hidden md:flex justify-end w-full mr-4">
@@ -42,7 +42,7 @@ export default function NavBar({
           </ul>
         </div>
         <div className="flex w-1/3 justify-end">
-          <NycTime />
+          <IndiaTime />
           <div
             onClick={() => toggleTheme()}
             className="cursor-pointer pr-4 md:pr-0 md:ml-4 flex items-center justify-center"
@@ -113,10 +113,10 @@ function HamburgerMenu({
   );
 }
 
-function NycTime() {
+function IndiaTime() {
   const [time, setTime] = useState<string>(
-    `NYC, ${new Date().toLocaleTimeString("en-US", {
-      timeZone: "America/New_York",
+     `India-Jaipur, ${new Date().toLocaleTimeString("en-US", { //change this if you want to change the time zone
+      timeZone: "Asia/Kolkata",
       hour: "numeric",
       minute: "2-digit",
       hour12: true,
@@ -126,12 +126,12 @@ function NycTime() {
   useEffect(() => {
     const timer = setInterval(() => {
       const timeNow = new Date().toLocaleTimeString("en-US", {
-        timeZone: "America/New_York",
+        timeZone: "Asia/Kolkata",
         hour: "numeric",
         minute: "2-digit",
         hour12: true,
       });
-      setTime(`NYC, ${timeNow}`);
+      setTime(`India-Jaipur, ${timeNow}`);
     }, 3000);
 
     return () => clearInterval(timer);
