@@ -81,7 +81,7 @@ export default function Hero({ loading, mobileMenuOpen }: HeroProps) {
     return () => {
       window.removeEventListener("resize", updatePathData);
     };
-  }, []);
+  }, [updatePathData]);
 
   return (
     <div

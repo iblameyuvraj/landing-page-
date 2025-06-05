@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import {
   AnimatePresence,
   motion,
@@ -105,18 +106,20 @@ export default function Accordian() {
                         </button>
                       </div>
                       <div className="md:w-2/5 flex items-center justify-center order-1 md:order-none mt-5 md:mt-0">
-                        <img
+                        <Image
                           className="md:max-h-[385px] dark:invert h-[360px] w-[360px] md:h-[270px] md:w-[270px] lg:h-[330px] lg:w-[330px]"
                           alt={`Symbol for ${title}`}
                           src={symbolUrl}
+                          width={360}
+                          height={360}
+                          priority
                         />
                       </div>
                     </motion.section>
                   )}
                 </AnimatePresence>
                 <AnimatePresence>
-                  <motion.img
-                    alt="arrow icon"
+                  <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -126,8 +129,15 @@ export default function Accordian() {
                         ? "md:hidden rotate-180 md:rotate-0"
                         : ""
                     } absolute right-4 lg:right-8 dark:invert transform-gpu transition ease-in-out`}
-                    src="/arrow.svg"
-                  />
+                  >
+                    <Image
+                      alt="arrow icon"
+                      src="/arrow.svg"
+                      width={24}
+                      height={24}
+                      priority
+                    />
+                  </motion.div>
                 </AnimatePresence>
               </div>
             </section>

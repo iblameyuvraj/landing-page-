@@ -3,6 +3,7 @@ import { useEffect, useState, Dispatch, SetStateAction } from "react";
 import { useTheme } from "../context/themeContext";
 import { navbarItems } from "@/content/homeContent";
 import { useScrollContext } from "../context/scrollBarContext";
+import Image from "next/image";
 
 type HamburgerMenuProps = {
   mobileMenuOpen: boolean;
@@ -28,10 +29,13 @@ export default function NavBar({
       }`}
     >
       <nav className="px-4 md:px-8 h-[64px] md:h-24 flex items-center justify-between max-w-screen-2xl mx-auto">
-        <img
+        <Image
           className="z-10 cursor-pointer dark:invert h-[27px] w-[113px] md:w-[173px] md:h-[41px]"
           src="/big-money-club.svg"
           alt="Big Money Club Logo"
+          width={173}
+          height={41}
+          priority
           onClick={() => scrollbar?.scrollTo(0, 0)}
         />
         <div className="hidden md:flex justify-end w-full mr-4">
@@ -47,7 +51,7 @@ export default function NavBar({
             onClick={() => toggleTheme()}
             className="cursor-pointer pr-4 md:pr-0 md:ml-4 flex items-center justify-center"
           >
-            <img
+            <Image
               alt="Dark or light mode icon"
               className="w-auto h-[1.25em] md:h-[1em]"
               src={
@@ -55,6 +59,9 @@ export default function NavBar({
                   ? "/dark-mode-icon.svg"
                   : "/light-mode-icon.svg"
               }
+              width={24}
+              height={24}
+              priority
             />
           </div>
           <HamburgerMenu

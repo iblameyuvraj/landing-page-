@@ -14,8 +14,8 @@ import Scrollbar from "smooth-scrollbar";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
-
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrollbar, setScrollbar] = useState<Scrollbar | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,8 +23,6 @@ export default function Home() {
     }, 4000);
     return () => clearTimeout(timer);
   }, []);
-
-  const [scrollbar, setScrollbar] = useState<Scrollbar | null>(null);
 
   useEffect(() => {
     const scrollbarInstance = Scrollbar.init(document.body, {
@@ -44,7 +42,7 @@ export default function Home() {
     setScrollbar(scrollbarInstance);
 
     return () => {
-      if (scrollbar) scrollbar.destroy();
+      if (scrollbarInstance) scrollbarInstance.destroy();
     };
   }, []);
 

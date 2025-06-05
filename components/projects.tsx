@@ -1,4 +1,5 @@
 import { projects } from "../content/homeContent";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -9,7 +10,7 @@ export default function Projects() {
       <div className="flex flex-col px-4 lg:px-8 lg:flex-row lg:justify-between mt-32 mb-16 md:mb-0 md:mt-52 md:pb-10 w-full">
         <h2 className="main-heading pb-2 tracking-[-2px]">Projects</h2>
         <p className="md:max-w-[320px] md:text-[22px] md:mt-2">
-          From Fortune 500’s to startups, we’re curious about industries and
+          From Fortune 500&apos;s to startups, we&apos;re curious about industries and
           companies of all shapes and sizes.
         </p>
       </div>
@@ -22,7 +23,14 @@ export default function Projects() {
                 className="px-2 w-[300px] md:w-[390px] box-border"
               >
                 <div className="relative mb-2 md:mb-5">
-                  <img alt={title} className="w-full h-auto" src={imageSrc} />
+                  <Image
+                    alt={title}
+                    className="w-full h-auto"
+                    src={imageSrc}
+                    width={390}
+                    height={390}
+                    priority
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-tan to-10%" />
                 </div>
                 <p className="mb-1 md:mb-2 uppercase font-medium">
@@ -31,10 +39,13 @@ export default function Projects() {
                       className="inline-block align-baseline h-[.75em] w-auto pr-1"
                       key={symbol}
                     >
-                      <img
+                      <Image
                         alt="service symbol"
                         className="h-full w-auto dark:invert"
                         src={symbol}
+                        width={24}
+                        height={24}
+                        priority
                       />
                     </span>
                   ))}
