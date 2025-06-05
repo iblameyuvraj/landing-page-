@@ -98,4 +98,4 @@ For any queries or support, please reach out to [yuvrajjsoni17@gmail.com]
 
 ---
 
-Made with ❤️ by [Yuvraj] (yuvraj.site)
+Made with ❤️ by [Yuvraj.site]
