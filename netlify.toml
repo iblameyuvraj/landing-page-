@@ -3,9 +3,33 @@
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "22.16.0"
-  NPM_VERSION = "10.2.4"
+  NODE_VERSION = "18.17.0"
+  NPM_VERSION = "9.6.7"
   PYTHON_VERSION = ""
   RUBY_VERSION = ""
   GO_VERSION = ""
-  PHP_VERSION = "" 
+  PHP_VERSION = ""
+
+# Cache configuration
+[[plugins]]
+  package = "@netlify/plugin-cache-core"
+
+[[plugins]]
+  package = "@netlify/plugin-cache-npm"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true 
