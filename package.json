@@ -1,5 +1,5 @@
 {
-  "name": "outcome-creative",
+  "name": "rishabh-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": "22.16.0"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
