@@ -10,13 +10,6 @@
   GO_VERSION = ""
   PHP_VERSION = ""
 
-# Cache configuration
-[[plugins]]
-  package = "@netlify/plugin-cache-core"
-
-[[plugins]]
-  package = "@netlify/plugin-cache-npm"
-
 [build.processing]
   skip_processing = false
 
